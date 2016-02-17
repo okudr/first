@@ -17,37 +17,9 @@
         <img src="tiny_canon.jpg" alt="photo Tiny Canon" title="Tiny Canon DSLR camera"/>
         <p>Published date and time: <time datetime="2016-02-14"><i>February 14, 2016</i></time></p>
        
-        <a href="table.html">There are more table examples like below:</a>
-        <br>
-        <br>
+        <p>Follow <a href="table.html">this link</a> to see more table examples</p>
+
         
-        <!-- building table from example       
-        <table border="1">
-            <tr>
-                <th rowspan="2">Summary</th>
-                <th>Section 1</th>
-                <th>Section 2</th>
-            </tr>
-            <tr>
-                <th>Result</th>
-                <th>Result</th>
-            </tr>   
-            <tr>
-                <td>January</td>
-                <td>10</td>
-                <td>20</td>
-            </tr>      
-            <tr>
-                <td>February</td>
-                <td>30</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>Total:</td>
-                <td colspan="2" align="center">100</td>
-            </tr>
-        </table>
-        -->
         <p><b>Possible attribute for field TYPE of INPUT tag:</b></p>
         <ul type="circle">
             <li>text</li>
@@ -58,13 +30,15 @@
         </ul>
         
         <form>
-        <fieldset>    
-            <label for="nickname">Nick Name</label>
+        <fieldset>
+            <legend>Contact Info</legend>
+            <label for="nickname">Your Nickname:</label>
             <input type="text" name="nickname" placeholder="Type you NickName" autofocus="autofocus" />
-            <label for="nickemail">Nick Email</label>
+            <label for="nickemail">Your E-mail:</label>
             <input type="email" name="nickemail" placeholder="Type you E-mail" required />
             <input type="submit" value="Submit"/>
         </fieldset>
+        <button name="submit"><strong>Send me</strong> a Message</button>
         </form>
         
     </body>
