@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        h1 {color:red;}
+        p {color:blue; font-style:italic;}
+        .weekdays li {
+            display:inline;
+            background-color:#EEE;
+            border: 2px solid;
+            border-color:#BBB;
+            margin:3px;
+            padding:.5em;
+            border-radius: 10px;
+        }
+        #kol1 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            overflow: scroll;
+            background-color:green;
+        }
+        #kol2 {
+            float: none;
+            width: 200px;
+            background-color:yellow;
+        }
+        #kol3 {
+            float: right;
+            width: 300px;
+            background-color:red;
+        }
+        #kol4 {
+            position: absolute;
+            right: 300px;
+            
+            background-color:lightblue;
+        }
+        </style>
+    </head>
+    
+    <body>
+
+    <h1>This is RED heading</h1>
+    <p>This is BLUE and ITALIC paragraph.</p>
+    <br><br>
+    <p id="kol2">List days of the week:</p>
+    <br>
+    <ul class="weekdays">
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+        <li>Sunday</li>
+     </ul>
+     <br>
+     <p id="kol1">When an element overflows its bounding box, and its overflow is set to scroll, all the content of the element stays within the box; none of the overflow appears outside the box. </p>
+     <p id="kol2">When an element overflows its bounding box, and its overflow is set to scroll, all the content of the element stays within the box; none of the overflow appears outside the box. </p>
+     <p id="kol3">When an element overflows its bounding box, and its overflow is set to scroll, all the content of the element stays within the box; none of the overflow appears outside the box. </p>
+     <br>
+     <p id="kol4">When an element overflows its bounding box, and its overflow is set to scroll, all the content of the element stays within the box; none of the overflow appears outside the box. </p>
+    
+    </body>
+    
+</html>
