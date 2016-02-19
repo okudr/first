@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- encoding table -->
+    <meta charset="utf-8">
+    <!-- document title -->
+    <title>My first Table</title>
+    <!-- set style for tables -->
+    <style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        font-family: verdana;
+    }
+    </style>    
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th rowspan="2" scope="colgroup">Summary</th>
+            <th>Section 1</th>
+            <th>Section 2</th>
+        </tr>
+        <tr>
+            <th>Result</th>
+            <th>Result</th>
+        </tr>   
+        <tr>
+            <td>January</td>
+            <td>10</td>
+            <td>20</td>
+        </tr>      
+        <tr>
+            <td>February</td>
+            <td>30</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Total:</td>
+            <td colspan="2" align="center">100</td>
+        </tr>
+    </table>        
+    <br>
+    <br>
+    <table style="width:50%">
+        <caption>Test table for <b>COL</b>span and <b>ROW</b>span:</caption>
+        <tr>
+        <th colspan="4">Table Header</th>
+        </tr>
+        <tr>
+        <th colspan="2"><br></th>
+        <th rowspan="3"><br></th>
+        <td><br></td>
+        </tr>
+        <tr>
+        <th rowspan="2"><br></th>
+        <td><br></td>
+        <td><br></td>
+        </tr>
+        <tr>
+        <td><br></td>
+        <td><br></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
