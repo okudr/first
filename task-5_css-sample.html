@@ -5,31 +5,52 @@
         <!-- encoding table -->
         <meta charset="utf-8">
         <!-- document title -->
-        <title>CSS-styles samples</title>
+        <title>CSS-styles sample</title>
         <style>
-            .kub {
-                width: 300px;
-                height: 300px;
+            .kub,.kub2 {
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                border: 2px solid red;
                 border-radius: 20px;
-                margin: 0 auto 0 auto;
+                margin: 0 auto;
                 padding: 20px;
-                border-style: 2px;
-                
             }
+            .kub2 { background-color: green; }
+            .kub:hover { opacity: 0.2; cursor: pointer; }
+            .kub2:hover {
+                transition: background 2s, transform 5s;
+                background: lightgreen; transform: rotate(180deg); }
             .offset {
-                position: absolute; left: 20px; top: 20px;
+                position: relative; left: 20px; top: 20px;
+                box-shadow: 10px 10px 5px grey;
+                transition: background 2s, transform 5s;
             }
+            .offset:hover { background: blue; transform: rotate(-180deg); }
+            .bottom-block {
+                width: 100%;
+                height: 50px;
+                margin: auto;
+                position: relative;
+                top: 30px;
+                font: italic bold 24px serif;
+                text-align: center;
+                background-color: #CCC;
+                transition: width 2s;
+            }
+            .bottom-block:hover { width: 50%; }
         </style>
-        
-        
     </head>
     
     <body>
-        <h1>CSS-style samples:</h1>
-        
-        
-        
-        
+        <h1>CSS-styles sample:</h1>
+
+        <div class="kub"><h2>Header</h2><p>Some text</p></div>
+        <div class="kub offset"><h2>Header</h2><p>Some text</p></div>
+        <div class="kub"><h2>Header</h2><p>Some text</p></div>
+        <div class="kub2"><h2>Header</h2><p>Some text</p></div>
+
+        <div class="bottom-block"><p>Footer text</p></div>
     </body>
     
 </html>
