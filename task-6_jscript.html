@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- encoding table -->
+        <meta charset="utf-8">        
+    <style type="text/css">
+        .lblue { background:lightblue; }
+        .calcform {
+            width:450px;
+            background:lightgreen;
+            border-radius:10px;
+            box-shadow: 10px 10px 5px green;
+            padding:20px 4% 25px;
+        }
+        .formula {
+            font-family:MJI;
+            font-size:1.2em;
+            display:inline;
+            text-align:center;
+        }
+        .kform { text-align:center; width:40px; border-radius:5px; }
+    </style>
+    </head>
+
+    <body>
+    <h1 style="color:lightblue">My first JavaScript Web Page</h1>
+    <div class=lblue>
+    <p style="display:inline"><strong>Квадратне рівняння</strong> — це рівняння виду <i>a</i>x<sup>2</sup>&nbsp;+&nbsp;<i>b</i>x&nbsp;+&nbsp;<i>c</i>&nbsp;=&nbsp;0, де <i>a</i> не дорівнює 0.<p>
+    Для розв'язання квадратного рівняння необхідно порахувати <strong>дискримінант</strong><br><div align=center> D = b<sup>2</sup>- 4ac.</div><br> Якщо D > 0, то рівняння має два різних дійсних кореня. Якщо D = 0, то обидва кореня дійсні і рівні. Якщо D < 0, то оба кореня  комплексні числа.<br>Корені квадратного рівняння знаходяться за формулою
+    <TABLE style="text-align:center" cellSpacing=5 cellPadding=5 width=330 align=center border=0>
+    <TBODY>
+        <TR>
+        <TD vAlign=center align=middle>
+        <TABLE cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR>
+            <TD vAlign=center align=middle rowSpan=2>x<sub>1,2</sub>&nbsp;=&nbsp;</TD>
+            <TD style="border-bottom-style:solid; text-align:center;">-b&nbsp;±&nbsp;√<span style="text-decoration:overline">D</span></TD>
+        </TR>
+        <TR>
+            <TD style="text-align:center">2a</TD>
+        </TR>
+        </TBODY>
+        </TABLE>
+        </TD>
+        </TR>
+    </TBODY>
+    </TABLE>
+    <p style="display:inline">Якщо в вашому квадратному рівнянні є віднімання, то перед відповідними коефіцієнтами в калькуляторі необхідно поставити знак мінус ("-"). Наприклад: x<sup>2</sup>&nbsp;-&nbsp;4x&nbsp;-&nbsp;5&nbsp;=&nbsp;0, коефіцієнти 1, -4, -5.<br>
+    Якщо в вашому квадратному рівнянні менше трьох доданків, то поруч з відсутніми доданками в калькуляторі поставте коефіцієнт нуль ("0"). Наприклад: x<sup>2</sup>&nbsp;-&nbsp;4x&nbsp;=&nbsp;0, коефіцієнти 1, -4, 0.</p>
+    <br>
+    <br>
+    </div>
+    
+    <h2 style="text-align: center">Введіть коефіцієнти квадратного рівняння:</h2>
+    
+    <div align=center><div class=calcform>
+    <input id="aaa" size=2 tabIndex=1 class=kform value=3>
+    <div class=formula>x</div><sup>2</sup>&nbsp;+&nbsp;
+    <input id="bbb" size=2 tabIndex=2 class=kform value=2>
+    <div class=formula>x</div>&nbsp;+&nbsp;
+    <input id="ccc" size=2 tabIndex=3 class=kform value=1> =&nbsp;0
+    <br><br>
+    <input onclick=solve_qe() tabIndex=4 type=button value="Розв'язати квадратне рівняння" title="Розв'язати квадратне рівняння">
+    </div>
+    <br>
+    <h3 id="dyskrym"></h3>
+    <h3 id="xxx1"></h3>
+    <h3 id="xxx2"></h3>
+    </div>
+    <br><br>
+
+    <script src="f-kv-rv.js"></script>
+
+<!--
+    <form>
+        <fieldset>
+            <legend><b>Input coefficients A,B,C:</b></legend>
+            <label for="koef_A">index A</label>
+            <input type="number" id="koef_A" required autofocus="autofocus" />
+            <br><br>
+            <label for="koef_B">index B</label>
+            <input type="number" id="koef_B" />
+            <br><br>
+            <label for="koef_C">index C</label>
+            <input type="number" id="koef_C" />
+            <br><br>
+            <input type="submit" value="Submit"/>
+        </fieldset>
+    </form>
+-->
+
+    </body>
+</html> 
